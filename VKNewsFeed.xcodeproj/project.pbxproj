@@ -46,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0640E89222D6B6E002597B1 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F075CDA322217FF1001CA654 /* FeedViewController.swift */,
+				F075CDA522218000001CA654 /* FeedViewController.storyboard */,
+			);
+			path = FeedViewController;
+			sourceTree = "<group>";
+		};
 		F075CD10221DBC2A001CA654 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +78,7 @@
 				F075CD1C221DBC2A001CA654 /* AppDelegate.swift */,
 				F075CD9C22207670001CA654 /* Services */,
 				F075CDA2222088A4001CA654 /* Auth */,
+				F0640E89222D6B6E002597B1 /* FeedViewController */,
 				F075CDA922218CA8001CA654 /* Helpers */,
 				F075CD23221DBC2B001CA654 /* Assets.xcassets */,
 				F075CD25221DBC2B001CA654 /* LaunchScreen.storyboard */,
@@ -89,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				F075CD9A22207644001CA654 /* AuthService.swift */,
-				F075CDA322217FF1001CA654 /* FeedViewController.swift */,
-				F075CDA522218000001CA654 /* FeedViewController.storyboard */,
 			);
 			path = Services;
 			sourceTree = "<group>";
