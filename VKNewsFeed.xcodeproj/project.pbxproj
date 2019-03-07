@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01351082230066300A34EB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351072230066300A34EB4 /* NetworkService.swift */; };
+		F013510A2230169800A34EB4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351092230169800A34EB4 /* API.swift */; };
 		F075CD1D221DBC2A001CA654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075CD1C221DBC2A001CA654 /* AppDelegate.swift */; };
 		F075CD24221DBC2B001CA654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F075CD23221DBC2B001CA654 /* Assets.xcassets */; };
 		F075CD27221DBC2B001CA654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F075CD25221DBC2B001CA654 /* LaunchScreen.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F01351072230066300A34EB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F01351092230169800A34EB4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F075CD19221DBC2A001CA654 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F075CD1C221DBC2A001CA654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F075CD23221DBC2B001CA654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				F075CD9A22207644001CA654 /* AuthService.swift */,
+				F01351072230066300A34EB4 /* NetworkService.swift */,
+				F01351092230169800A34EB4 /* API.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -218,7 +224,9 @@
 				F075CDA822218C8E001CA654 /* UIViewController + Storyboard.swift in Sources */,
 				F075CD9E222086EC001CA654 /* AuthViewController.swift in Sources */,
 				F075CDA422217FF2001CA654 /* FeedViewController.swift in Sources */,
+				F01351082230066300A34EB4 /* NetworkService.swift in Sources */,
 				F075CD1D221DBC2A001CA654 /* AppDelegate.swift in Sources */,
+				F013510A2230169800A34EB4 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
