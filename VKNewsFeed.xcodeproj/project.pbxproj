@@ -28,6 +28,7 @@
 		F094493C223ECC9B003DF40F /* NewsfeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F094493B223ECC9B003DF40F /* NewsfeedViewController.storyboard */; };
 		F0944999224113AF003DF40F /* NewsfeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0944998224113AF003DF40F /* NewsfeedCell.swift */; };
 		F094499B224113F9003DF40F /* NewsfeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F094499A224113F9003DF40F /* NewsfeedCell.xib */; };
+		F0CDC2542246A4A3006CC6AB /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CDC2532246A4A3006CC6AB /* WebImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F094493B223ECC9B003DF40F /* NewsfeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsfeedViewController.storyboard; sourceTree = "<group>"; };
 		F0944998224113AF003DF40F /* NewsfeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCell.swift; sourceTree = "<group>"; };
 		F094499A224113F9003DF40F /* NewsfeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsfeedCell.xib; sourceTree = "<group>"; };
+		F0CDC2532246A4A3006CC6AB /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				F075CDA722218C8E001CA654 /* UIViewController + Storyboard.swift */,
+				F0CDC2532246A4A3006CC6AB /* WebImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				F0944936223BF059003DF40F /* NewsfeedRouter.swift in Sources */,
 				F01351082230066300A34EB4 /* NetworkService.swift in Sources */,
 				F0944937223BF059003DF40F /* NewsfeedModels.swift in Sources */,
+				F0CDC2542246A4A3006CC6AB /* WebImageView.swift in Sources */,
 				F01351142234147600A34EB4 /* NetworkDataFetcher.swift in Sources */,
 				F0944935223BF059003DF40F /* NewsfeedWorker.swift in Sources */,
 				F075CD1D221DBC2A001CA654 /* AppDelegate.swift in Sources */,
