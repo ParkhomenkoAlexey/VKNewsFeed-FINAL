@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F010388C224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010388B224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift */; };
 		F01351082230066300A34EB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351072230066300A34EB4 /* NetworkService.swift */; };
 		F013510A2230169800A34EB4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351092230169800A34EB4 /* API.swift */; };
 		F01351102232908200A34EB4 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013510F2232908200A34EB4 /* FeedResponse.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F010388B224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		F01351072230066300A34EB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F01351092230169800A34EB4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F013510F2232908200A34EB4 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F0944998224113AF003DF40F /* NewsfeedCell.swift */,
+				F010388B224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift */,
 				F094499A224113F9003DF40F /* NewsfeedCell.xib */,
 			);
 			path = Cell;
@@ -205,6 +208,7 @@
 				TargetAttributes = {
 					F075CD18221DBC2A001CA654 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -276,6 +280,7 @@
 				F0944936223BF059003DF40F /* NewsfeedRouter.swift in Sources */,
 				F01351082230066300A34EB4 /* NetworkService.swift in Sources */,
 				F0944937223BF059003DF40F /* NewsfeedModels.swift in Sources */,
+				F010388C224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift in Sources */,
 				F0CDC2542246A4A3006CC6AB /* WebImageView.swift in Sources */,
 				F01351142234147600A34EB4 /* NetworkDataFetcher.swift in Sources */,
 				F0944935223BF059003DF40F /* NewsfeedWorker.swift in Sources */,
@@ -433,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyParkhomenko.VKNewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,7 +460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyParkhomenko.VKNewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
