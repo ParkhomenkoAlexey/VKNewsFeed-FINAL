@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F010388C224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010388B224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift */; };
 		F0103890224D5F880054291A /* String + Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010388F224D5F880054291A /* String + Height.swift */; };
+		F011F2CE2250E7BF00D22B9D /* NewsfeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F2CD2250E7BF00D22B9D /* NewsfeedCodeCell.swift */; };
+		F011F2D02250F4C200D22B9D /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F2CF2250F4C200D22B9D /* Constraints.swift */; };
 		F01351082230066300A34EB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351072230066300A34EB4 /* NetworkService.swift */; };
 		F013510A2230169800A34EB4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351092230169800A34EB4 /* API.swift */; };
 		F01351102232908200A34EB4 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013510F2232908200A34EB4 /* FeedResponse.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		F010388B224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		F010388F224D5F880054291A /* String + Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Height.swift"; sourceTree = "<group>"; };
+		F011F2CD2250E7BF00D22B9D /* NewsfeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCodeCell.swift; sourceTree = "<group>"; };
+		F011F2CF2250F4C200D22B9D /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		F01351072230066300A34EB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F01351092230169800A34EB4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F013510F2232908200A34EB4 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				F075CDA722218C8E001CA654 /* UIViewController + Storyboard.swift */,
 				F0CDC2532246A4A3006CC6AB /* WebImageView.swift */,
 				F010388F224D5F880054291A /* String + Height.swift */,
+				F011F2CF2250F4C200D22B9D /* Constraints.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				F094499A224113F9003DF40F /* NewsfeedCell.xib */,
 				F0944998224113AF003DF40F /* NewsfeedCell.swift */,
+				F011F2CD2250E7BF00D22B9D /* NewsfeedCodeCell.swift */,
 				F010388B224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift */,
 			);
 			path = Cell;
@@ -285,6 +291,8 @@
 				F01351082230066300A34EB4 /* NetworkService.swift in Sources */,
 				F0944937223BF059003DF40F /* NewsfeedModels.swift in Sources */,
 				F010388C224BBAA20054291A /* NewsfeedCellLayoutCalculator.swift in Sources */,
+				F011F2CE2250E7BF00D22B9D /* NewsfeedCodeCell.swift in Sources */,
+				F011F2D02250F4C200D22B9D /* Constraints.swift in Sources */,
 				F0CDC2542246A4A3006CC6AB /* WebImageView.swift in Sources */,
 				F01351142234147600A34EB4 /* NetworkDataFetcher.swift in Sources */,
 				F0944935223BF059003DF40F /* NewsfeedWorker.swift in Sources */,
