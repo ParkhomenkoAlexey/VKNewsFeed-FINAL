@@ -13,10 +13,41 @@ final class NewsfeedCodeCell: UITableViewCell {
     
     static let reuseId = "NewsfeedCodeCell"
     
+    // Первый слой
     let cardView: UIView = {
        let view = UIView()
         view.backgroundColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    // Второй слой
+    let topView: UIView = {
+       let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+        return view
+    }()
+    
+    let postlabel: UILabel = {
+       let label = UILabel()
+        label.numberOfLines = 0
+        label.backgroundColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
+        label.font = Constants.postLabelFont
+        label.textColor = #colorLiteral(red: 0.227329582, green: 0.2323184013, blue: 0.2370472848, alpha: 1)
+        return label
+    }()
+    
+    let postImageView: WebImageView = {
+        let imageView = WebImageView()
+        imageView.backgroundColor = #colorLiteral(red: 0.8901960784, green: 0.8980392157, blue: 0.9098039216, alpha: 1)
+        return imageView
+    }()
+    
+    let bottomView: UIView = {
+       let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
         return view
     }()
     
@@ -25,39 +56,51 @@ final class NewsfeedCodeCell: UITableViewCell {
         
         backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
+        overlayFirstLayer() // первый слой
+        overlaySecondLayer() // второй слой
+    }
+    
+    func set(viewModel: FeedCellViewModel) {
+        
+        postlabel.frame = viewModel.sizes.postLabelFrame
+        postImageView.frame = viewModel.sizes.attachmentFrame
+        bottomView.frame = viewModel.sizes.bottomViewFrame
+        
+        if let photoAttachment = viewModel.photoAttachement {
+            //postImageView.set(imageURL: photoAttachment.photoUrlString)
+            postImageView.isHidden = false
+        } else {
+            postImageView.isHidden = true
+        }
+    }
+    
+    
+    
+    func overlaySecondLayer() {
+        cardView.addSubview(topView)
+        cardView.addSubview(postlabel)
+        cardView.addSubview(postImageView)
+        cardView.addSubview(bottomView)
+        
+        // topView constraints
+        topView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 8).isActive = true
+        topView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -8).isActive = true
+        topView.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 8).isActive = true
+        topView.heightAnchor.constraint(equalToConstant: Constants.topViewHeight).isActive = true
+
+        
+        // postlabel constraints
+        
+        // postImageView constraints
+        
+        // bottomView constraints
+    }
+    
+    func overlayFirstLayer() {
         addSubview(cardView)
         
         // cardView constraints
-
-//        cardView.topAnchor.constraint(equalTo: topAnchor, constant: 12).isActive = true
-//        cardView.bottomAnchor.constraint(equalTo: bottomAnchor, constant:  -12).isActive = true
-//        cardView.leadingAnchor.constraint(equalTo: leadingAnchor, constant:  12).isActive = true
-//        cardView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
-        
-//        cardView.fillSuperview(padding: UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12))
-//        cardView.fillSuperview()
-        
-//        cardView.topAnchor.constraint(equalTo: topAnchor, constant: 8).isActive = true
-//        cardView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
-//        cardView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//        cardView.widthAnchor.constraint(equalToConstant: 40).isActive = true
-        
-        cardView.anchor(top: topAnchor,
-                        leading: leadingAnchor,
-                        bottom: nil,
-                        trailing: nil,
-                        padding: UIEdgeInsets(top: 8, left: 8, bottom: 777, right: 777),
-                        size: CGSize(width: 40, height: 40))
-        
-//        cardView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
-//        cardView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
-//        cardView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-//        cardView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-//        cardView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-//        cardView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-//        cardView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-//        cardView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1/2).isActive = true
+        cardView.fillSuperview(padding: Constants.cardInsets)
     }
     
     required init?(coder aDecoder: NSCoder) {
