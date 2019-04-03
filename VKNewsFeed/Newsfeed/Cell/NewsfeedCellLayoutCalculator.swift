@@ -18,7 +18,7 @@ struct Sizes: FeedCellSizes {
 }
 
 protocol FeedCellLayoutCalculatorProtocol {
-    func sizes(postText: String?, photoAttachment: FeedCellPhotoAttachementViewModel?) -> FeedCellSizes
+    func sizes(postText: String?, photoAttachment: FeedCellPhotoAttachementViewModel?, isFullSizedPost: Bool) -> FeedCellSizes
 }
 
 final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
@@ -29,13 +29,12 @@ final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
         self.screenWidth = screenWidth
     }
 
-    func sizes(postText: String?, photoAttachment: FeedCellPhotoAttachementViewModel?) -> FeedCellSizes {
+    func sizes(postText: String?, photoAttachment: FeedCellPhotoAttachementViewModel?, isFullSizedPost: Bool) -> FeedCellSizes {
         
         var showMoreTextButton = false
         
         let cardViewWidth = screenWidth - Constants.cardInsets.left - Constants.cardInsets.right
         
-    
         // MARK: Работа с postLabelFrame
         
         var postLabelFrame = CGRect(origin: CGPoint(x: Constants.postLabelInsets.left, y: Constants.postLabelInsets.top),
@@ -47,11 +46,11 @@ final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
             
             let limitHeight = Constants.postLabelFont.lineHeight * Constants.minifiedPostLimitLines
             
-            if height > limitHeight {
+            if !isFullSizedPost && height > limitHeight {
                 height = Constants.postLabelFont.lineHeight * Constants.minifiedPostLines
                 showMoreTextButton = true
             }
-            
+        
             postLabelFrame.size = CGSize(width: width, height: height)
         }
         
