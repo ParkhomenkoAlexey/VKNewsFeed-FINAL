@@ -28,7 +28,6 @@ class NewsfeedInteractor: NewsfeedBusinessLogic {
     }
     
     switch request {
-
     case .getNewsfeed:
         fetcher.getFeed { [weak self] (feedResponse) in
             self?.feedResponse = feedResponse
