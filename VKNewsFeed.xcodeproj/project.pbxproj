@@ -16,6 +16,8 @@
 		F013510A2230169800A34EB4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351092230169800A34EB4 /* API.swift */; };
 		F01351102232908200A34EB4 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013510F2232908200A34EB4 /* FeedResponse.swift */; };
 		F01351142234147600A34EB4 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01351132234147600A34EB4 /* NetworkDataFetcher.swift */; };
+		F072F3CB225E255600DD7867 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072F3CA225E255600DD7867 /* FooterView.swift */; };
+		F072F3CF225E78F500DD7867 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F072F3CE225E78F500DD7867 /* Localizable.stringsdict */; };
 		F075CD1D221DBC2A001CA654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075CD1C221DBC2A001CA654 /* AppDelegate.swift */; };
 		F075CD24221DBC2B001CA654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F075CD23221DBC2B001CA654 /* Assets.xcassets */; };
 		F075CD27221DBC2B001CA654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F075CD25221DBC2B001CA654 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		F01351092230169800A34EB4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F013510F2232908200A34EB4 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		F01351132234147600A34EB4 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		F072F3CA225E255600DD7867 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		F072F3CE225E78F500DD7867 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		F075CD19221DBC2A001CA654 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F075CD1C221DBC2A001CA654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F075CD23221DBC2B001CA654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +105,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F072F3C9225E254600DD7867 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				F072F3CA225E255600DD7867 /* FooterView.swift */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
 		F075CD10221DBC2A001CA654 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 				F075CD23221DBC2B001CA654 /* Assets.xcassets */,
 				F075CD25221DBC2B001CA654 /* LaunchScreen.storyboard */,
 				F075CD28221DBC2B001CA654 /* Info.plist */,
+				F072F3CE225E78F500DD7867 /* Localizable.stringsdict */,
 			);
 			path = VKNewsFeed;
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 		F094492C223BF019003DF40F /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				F072F3C9225E254600DD7867 /* FooterView */,
 				F0873E57225A031E00089882 /* TitleView */,
 				F0A5908F2255278C00AE5600 /* GalleryView */,
 				F0944997224113A1003DF40F /* Cell */,
@@ -286,6 +300,7 @@
 				F094493C223ECC9B003DF40F /* NewsfeedViewController.storyboard in Resources */,
 				F075CD24221DBC2B001CA654 /* Assets.xcassets in Resources */,
 				F094499B224113F9003DF40F /* NewsfeedCell.xib in Resources */,
+				F072F3CF225E78F500DD7867 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0873E4F2256199600089882 /* Rowlayout.swift in Sources */,
+				F072F3CB225E255600DD7867 /* FooterView.swift in Sources */,
 				F01351102232908200A34EB4 /* FeedResponse.swift in Sources */,
 				F0103890224D5F880054291A /* String + Height.swift in Sources */,
 				F0944938223BF059003DF40F /* NewsfeedViewController.swift in Sources */,
